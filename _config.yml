@@ -18,16 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Laura Jenkins - Lovebirb
+email: Laura@Lovebirb.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Software Development by Laura Jenkins
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "lovebirb.com" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  LiruJ
+linkedin_username: laura-jenkins-839744121
+itchio_username: liru
+
+sass:
+    sass_dir: _sass
+
+collections:
+  posts:
+    output: true
+    permalink: /projects/:title
 
 # Build settings
 theme: minima
@@ -43,6 +50,7 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 # exclude:
+#   - help
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Upgrades>
+  <Upgrade>
+    <Name>Basic Turret</Name>
+    <Cost>300</Cost>
+    <Damage>25</Damage>
+    <FireRate>1.5</FireRate>
+    <ProjectileSpeed>5</ProjectileSpeed>
+    <ProjectileSprite>0</ProjectileSprite>
+    <Range>5.5</Range>
+    <RotateSpeed>180</RotateSpeed>
+    <Target>Nearest</Target>
+    <Bonus>0.5</Bonus>
+    <GunSprite>0</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A basic turret.</ToolTip>
+    <FireSound>BasicShot</FireSound>
+    <SelectSound>BasicSelect</SelectSound>
+
+    <LeftUpgrade>50 Cal. Turret</LeftUpgrade>
+    <RightUpgrade>Triple Barrelled Turret</RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>50 Cal. Turret</Name>
+    <Cost>100</Cost>
+    <Damage>75</Damage>
+    <FireRate>0.5</FireRate>
+    <ProjectileSpeed>7</ProjectileSpeed>
+    <ProjectileSprite>0</ProjectileSprite>
+    <Range>6.5</Range>
+    <RotateSpeed>160</RotateSpeed>
+    <Target>First</Target>
+    <Bonus>0.45</Bonus>
+    <GunSprite>2</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A powerful turret.</ToolTip>
+    <FireSound>BasicShot</FireSound>
+    <SelectSound>TripleSelect</SelectSound>
+
+    <LeftUpgrade>Guass</LeftUpgrade>
+    <RightUpgrade>Autocannon</RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Triple Barrelled Turret</Name>
+    <Cost>75</Cost>
+    <Damage>20</Damage>
+    <FireRate>2.75</FireRate>
+    <ProjectileSpeed>5</ProjectileSpeed>
+    <ProjectileSprite>0</ProjectileSprite>
+    <Range>3.5</Range>
+    <RotateSpeed>190</RotateSpeed>
+    <Target>Nearest</Target>
+    <Bonus>0.55</Bonus>
+    <GunSprite>1</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A triple barrelled turret.</ToolTip>
+    <FireSound>TripleShot</FireSound>
+    <SelectSound>TripleSelect</SelectSound>
+
+    <LeftUpgrade>Autocannon</LeftUpgrade>
+    <RightUpgrade>Acid Thrower</RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Autocannon</Name>
+    <Cost>800</Cost>
+    <Damage>125</Damage>
+    <FireRate>1</FireRate>
+    <ProjectileSpeed>6</ProjectileSpeed>
+    <ProjectileSprite>0</ProjectileSprite>
+    <Range>5.5</Range>
+    <RotateSpeed>150</RotateSpeed>
+    <Target>Nearest</Target>
+    <Bonus>0.5</Bonus>
+    <GunSprite>2</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A liquid cooled autocannon.</ToolTip>
+    <FireSound>AutocannonShot</FireSound>
+    <SelectSound>TripleSelect</SelectSound>
+
+    <LeftUpgrade>Coilgun</LeftUpgrade>
+    <RightUpgrade>Gatling</RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Guass</Name>
+    <Cost>750</Cost>
+    <Damage>155</Damage>
+    <FireRate>0.25</FireRate>
+    <ProjectileSpeed>20</ProjectileSpeed>
+    <ProjectileSprite>6</ProjectileSprite>
+    <Range>8.5</Range>
+    <RotateSpeed>100</RotateSpeed>
+    <Target>First</Target>
+    <Bonus>0.4</Bonus>
+    <GunSprite>8</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A magnetically aided slug cannon.</ToolTip>
+    <FireSound>PlasmaShot</FireSound>
+    <SelectSound>CoilgunSelect</SelectSound>
+
+    <LeftUpgrade>Railgun</LeftUpgrade>
+    <RightUpgrade>Coilgun</RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Acid Thrower</Name>
+    <Cost>1000</Cost>
+    <Damage>15</Damage>
+    <FireRate>10</FireRate>
+    <ProjectileSpeed>5</ProjectileSpeed>
+    <ProjectileSprite>2</ProjectileSprite>
+    <Range>2.5</Range>
+    <RotateSpeed>720</RotateSpeed>
+    <Target>Nearest</Target>
+    <Bonus>0.6</Bonus>
+    <GunSprite>4</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A launcher which shoots corrosive acid.</ToolTip>
+    <FireSound>AcidShot</FireSound>
+    <SelectSound>AcidSelect</SelectSound>
+
+    <LeftUpgrade>Gatling</LeftUpgrade>
+    <RightUpgrade>Flame Thrower</RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Railgun</Name>
+    <Cost>2750</Cost>
+    <Damage>450</Damage>
+    <FireRate>0.2</FireRate>
+    <ProjectileSpeed>25</ProjectileSpeed>
+    <ProjectileSprite>6</ProjectileSprite>
+    <Range>12.5</Range>
+    <RotateSpeed>75</RotateSpeed>
+    <Target>First</Target>
+    <Bonus>0.35</Bonus>
+    <GunSprite>3</GunSprite>
+    <BaseSprite>1</BaseSprite>
+    <ToolTip>Two rails with extremely high electric potential launch a slug.</ToolTip>
+    <FireSound>RailgunShot</FireSound>
+    <SelectSound>RailgunSelect</SelectSound>
+
+    <LeftUpgrade></LeftUpgrade>
+    <RightUpgrade>Plasma Rifle</RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Coilgun</Name>
+    <Cost>2500</Cost>
+    <Damage>250</Damage>
+    <FireRate>0.45</FireRate>
+    <ProjectileSpeed>25</ProjectileSpeed>
+    <ProjectileSprite>6</ProjectileSprite>
+    <Range>7.5</Range>
+    <RotateSpeed>150</RotateSpeed>
+    <Target>First</Target>
+    <Bonus>0.55</Bonus>
+    <GunSprite>5</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A cannon with magnetic coils to accelerate a slug.</ToolTip>
+    <FireSound>CoilgunShot</FireSound>
+    <SelectSound>CoilgunSelect</SelectSound>
+
+    <LeftUpgrade>Plasma Rifle</LeftUpgrade>
+    <RightUpgrade>Photon Repeater</RightUpgrade>
+  </Upgrade>
+  
+  <Upgrade>
+    <Name>Gatling</Name>
+    <Cost>2900</Cost>
+    <Damage>12.5</Damage>
+    <FireRate>15</FireRate>
+    <ProjectileSpeed>7.5</ProjectileSpeed>
+    <ProjectileSprite>0</ProjectileSprite>
+    <Range>5</Range>
+    <RotateSpeed>220</RotateSpeed>
+    <Target>First</Target>
+    <Bonus>0.55</Bonus>
+    <GunSprite>7</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>An anti-air cannon with 6 rotating barrels.</ToolTip>
+    <FireSound>GatlingShot</FireSound>
+    <SelectSound>TripleSelect</SelectSound>
+
+    <LeftUpgrade>Photon Repeater</LeftUpgrade>
+    <RightUpgrade>Laser LMG</RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Flame Thrower</Name>
+    <Cost>3000</Cost>
+    <Damage>15</Damage>
+    <FireRate>20</FireRate>
+    <ProjectileSpeed>4</ProjectileSpeed>
+    <ProjectileSprite>5</ProjectileSprite>
+    <Range>2.5</Range>
+    <RotateSpeed>720</RotateSpeed>
+    <Target>Nearest</Target>
+    <Bonus>0.65</Bonus>
+    <GunSprite>6</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A launcher which shoots ignited rocket fuel.</ToolTip>
+    <FireSound>FlameShot</FireSound>
+    <SelectSound>FlameSelect</SelectSound>
+
+    <LeftUpgrade>Laser LMG</LeftUpgrade>
+    <RightUpgrade></RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Laser LMG</Name>
+    <Cost>7500</Cost>
+    <Damage>50</Damage>
+    <FireRate>15</FireRate>
+    <ProjectileSpeed>15</ProjectileSpeed>
+    <ProjectileSprite>3</ProjectileSprite>
+    <Range>4</Range>
+    <RotateSpeed>360</RotateSpeed>
+    <Target>First</Target>
+    <Bonus>0.6</Bonus>
+    <GunSprite>1</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A fast firing laser machine gun.</ToolTip>
+    <FireSound>LaserShot</FireSound>
+    <SelectSound>TripleSelect</SelectSound>
+
+    <LeftUpgrade></LeftUpgrade>
+    <RightUpgrade></RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Photon Repeater</Name>
+    <Cost>6000</Cost>
+    <Damage>85</Damage>
+    <FireRate>5</FireRate>
+    <ProjectileSpeed>15</ProjectileSpeed>
+    <ProjectileSprite>4</ProjectileSprite>
+    <Range>5</Range>
+    <RotateSpeed>180</RotateSpeed>
+    <Target>First</Target>
+    <Bonus>0.5</Bonus>
+    <GunSprite>1</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A middle-of-the-road light cannon.</ToolTip>
+    <FireSound>LaserShot</FireSound>
+    <SelectSound>TripleSelect</SelectSound>
+
+    <LeftUpgrade></LeftUpgrade>
+    <RightUpgrade></RightUpgrade>
+  </Upgrade>
+
+  <Upgrade>
+    <Name>Plasma Rifle</Name>
+    <Cost>4500</Cost>
+    <Damage>250</Damage>
+    <FireRate>1</FireRate>
+    <ProjectileSpeed>8</ProjectileSpeed>
+    <ProjectileSprite>2</ProjectileSprite>
+    <Range>7.5</Range>
+    <RotateSpeed>155</RotateSpeed>
+    <Target>First</Target>
+    <Bonus>0.4</Bonus>
+    <GunSprite>1</GunSprite>
+    <BaseSprite>0</BaseSprite>
+    <ToolTip>A modified energy weapon that causes the fired slug to turn into a plasma.</ToolTip>
+    <FireSound>PlasmaShot</FireSound>
+    <SelectSound>PlasmaSelect</SelectSound>
+
+    <LeftUpgrade></LeftUpgrade>
+    <RightUpgrade></RightUpgrade>
+  </Upgrade>
+</Upgrades>

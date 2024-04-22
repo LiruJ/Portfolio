@@ -1,0 +1,14 @@
+<header class="site-header" role="banner">
+
+
+
+  <div class="wrapper">
+    <div class="site-title-container">
+
+      {%- assign default_paths = site.pages | map: "path" -%}
+      {%- assign page_paths = site.header_pages | default: default_paths -%}
+      <img class="site-logo" src="{{ "/assets/images/lovebirb-logo.svg" | relative_url }}" viewBox="0 0 54 54"></img>
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Caique Engine"
+last-updated:   2023-12-22 15:22:24 +0100
+categories: technical
+
+background-image: "/assets/images/projects/caique/background.png"
+cover-image: "/assets/images/projects/caique/cover.png"
+icon-image: "/assets/images/lovebirb-logo.png"
+short-description: A C++ game engine using OpenGL and LuaJIT
+
+tools: [ "cpp", "opengl", "lua" ]
+links: { "github":"https://github.com/LiruJ/Caique" }
+---
+
+This engine was made for a university assignment, for which I achieved a grade of 77.
+
+It features a full scene graph where each object has a parent and can have children, where the children can be positioned and rotated local to their parent. An Entity Component System (ECS) was also implemented, where each object can have a number of components, such as a script, mesh renderer, or camera. All of the graphical behaviours are using OpenGL and GLM.
+
+The main feature is the integration of Lua as a scripting language. This allows the game objects to have custom behaviour that does not require the entire engine to be recompiled for every change. In fact, an entire game could be created without having to compile the engine again.
+
+{% include post-image.html src="/assets/images/projects/caique/camera-code.png" caption="The Lua script for the camera" height=320 %}
+
+The game constructs the scene using another Lua file. This Lua file can create the game objects and their components, as well as place them around the scene.
+
+{% include post-image.html src="/assets/images/projects/caique/scene-loader.png" caption="The Lua script responsible for loading the scene" height=320 %}
+
+The engine exposed many bindings to the Lua environment to handle creation and initialisation of game objects, so that simple behaviours like movement, rotation, and spawning could be handled. The next step would be to add a physics system, which would allow for a player to exist in the world, and things like triggers to change the game state.

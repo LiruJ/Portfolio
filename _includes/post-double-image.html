@@ -1,0 +1,7 @@
+<div>
+    <p class="project-image-container">
+        <img class="project-image" src="{{ include.src | relative_url }}" height="{{ include.height | default: 220 }}" alt="{{ include.caption }}" onclick="onImageClicked(this)">
+        <img class="project-image" src="{{ include.src2 | relative_url }}" height="{{ include.height | default: 220 }}" alt="{{ include.caption }}" onclick="onImageClicked(this)">
+    </p>
+    <figcaption class="project-image-caption">{{ include.caption }}</figcaption>
+</div>

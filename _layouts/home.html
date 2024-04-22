@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/projects.css" | relative_url }}">
+
+<div class="home">
+
+  
+  <div class="site-aboutme-container">
+
+    <div class="site-portrait-container">
+        <img class="site-portrait" src="/assets/images/portrait.jpg">
+    </div>
+    <div>
+        <h1>About Me</h1>
+        <p>
+          {{ content }}
+        </p>
+    </div>
+</div>
+
+
+  <h1>Projects</h1>
+  {%- if site.posts.size > 0 -%}
+    <ul class="post-list">
+      {%- for project in site.posts -%}
+      <div class="container project-container">
+                  
+        <img class="project-background" src="{{ project.cover-image }}"></img>
+        <a class="project-click-box" href="{{ project.url | relative_url }}" target="_blank"></a>
+
+        <div class="blurred">
+          <div class="project-details">
+              <div class="project-icon project-fade-in-out">
+                  <img style="height: 100%; width: 100%; object-fit: contain" src="{{ project.icon-image }}"></img>
+              </div>
+              <div class="project-description-short">
+                <div class="project-title">
+
+                  <h1 class="project-text">{{ project.title }}</h1>
+                  <div>
+                    <div class="project-tools">
+                      {%- for tool_name in project.tools -%}
+                      {% assign tool = site.data.tools | where: "data-name", tool_name | first %}
+                      <img class="project-tool" src="{{ tool.icon-image }}"></img>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                </div>
+
+                <p class="project-text project-fade-in-out">
+                    {{ project.short-description }}
+                </p>
+                <a class="project-text project-fade-in-out project-info-button" href="{{ project.url | relative_url }}" target="_blank">
+                    more info
+                </a>
+              </div>
+              <div class="project-links-container project-fade-in-out">
+                {%- for website_link_pair in project.links -%}
+                {% assign link = site.data.websites | where: "data-name", website_link_pair[0] | first %}
+                <a class="project-link" href="{{ website_link_pair[1] }}" target="_blank">
+                  <img class="project-link-icon" src="{{ link.icon-image }}"></img>
+                </a>
+                {%- endfor -%}
+              </div>
+          </div>
+
+        </div>
+      </div>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>

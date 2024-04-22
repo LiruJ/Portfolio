@@ -1,0 +1,246 @@
+---
+---
+
+@charset "utf-8";
+
+@import "minima";
+
+/* The container for a project, holding the image and content */
+.project-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 900 / 180;
+    border-bottom: 2px solid $secondary-brand-color;
+    padding: 0px 0px 0px 0px;
+}
+
+    /* Enables the blur when the project cover is hovered over */
+    .project-container:hover .blurred {
+        background-color: #25252583;
+        backdrop-filter: blur(4px);
+        transition: all 0.25s ease 0s;
+    }
+    
+    /* Moves the project title and tools to the top of the cover when it is hovered over */
+    .project-container:hover div.project-title {
+        top: 0%;
+        transform: translate(0, 0);
+        transition: all 0.25s ease 0s;
+    }
+
+    /* Makes the title text smaller when the cover is hovered over */
+    .project-container:hover h1.project-text {
+        font-size: 30px;
+        transition: all 0.25s ease 0s;
+    }
+
+    /* Makes the tool icons smaller when the cover is hovered over */
+    .project-container:hover .project-tools {
+        height: 24px;
+        transition: all 0.25s ease 0s;
+    }
+
+    /* Shows the icon and links when the cover is hovered over */
+    .project-container:hover .project-fade-in-out {
+        opacity: 1;
+        transition: all 0.25s ease 0.25s;
+    }
+
+/* The cover image */
+.project-background {
+    pointer-events: none;
+    width: 100%;
+}
+
+.project-click-box {
+    pointer-events: none;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Used for unblurring the project cover when it's not hovered */
+.blurred {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: none;
+    pointer-events: none;
+    text-decoration: none;
+    transition: all 0.25s ease 0.25s;
+}
+
+/* The main class for a project's entry */
+.project-details {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+
+/* The icon for the project, which is displayed on the left of the cover */
+.project-icon {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.25s ease 0s;
+}
+
+/* The whole text part of the project cover, including the title, tools, and description */
+.project-description-short {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    text-align: center;
+}
+
+/* Anything that is hidden until hovered over */
+.project-fade-in-out {
+    opacity: 0;
+    transition: all 0.25s ease 0s;
+}
+
+/* Any text inside the project element */
+p.project-text, h1.project-text, a.project-text {
+    text-shadow: 2px 2px 3px black;
+    color: $text-color;
+}
+
+/* The title text for the project */
+h1.project-text {
+
+    font-size: 50px;
+    transition: all 0.25s ease 0.25s;
+    text-align: center;
+    margin-bottom: 0px;
+
+    text-shadow:0 0 5px #383838, 0 0 10px #383838, 0 0 15px #383838;
+}
+
+/* The "more info" button text */
+a.project-text {
+    z-index: -1;
+    pointer-events: all;
+}
+
+/* The "more info" button that displays when the project element is hovered over */
+a.project-info-button {
+    background-color: $secondary-brand-color;
+    border: none;
+    border-radius: 7px;
+    color: $text-color;
+    padding: 7px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* The stuff that shows when the project element is not hovered over, which is the title text and tools */
+.project-title {
+    position: relative;
+    transform: translate(0, -50%);
+    top: 50%;
+    transition: all 0.25s ease 0s;
+
+    margin-bottom: 10px;
+}
+
+/* The grid of links for each project */
+.project-links-container {
+    width: 10%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    list-style: none;
+
+    opacity: 0;
+    transition: all 0.25s ease 0s;
+}
+
+/* A link to a place where you can find the source code and/or download of the project */
+.project-link {
+    width: 46%;
+    margin: 2%;
+    aspect-ratio: 1 / 1;
+}
+
+/* The icon for a website for the source code/download */
+.project-link-icon {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    z-index: -1;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+/* The bar of icons for the tools used to make a project */
+.project-tools {
+    height: 32px;
+    display: inline-block;
+
+    transition: all 0.25s ease 0s;
+}
+
+/* An icon for a tool used to make a project */
+img.project-tool {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    filter: drop-shadow(0 0 5px #383838);
+    image-rendering: auto;
+}
+
+@include media-query($on-palm) {
+
+    /* Put the About Me header under the portrait */
+    .site-aboutme-container {
+        display: block;
+    }
+
+    /* Make the portrait fill the width */
+    .site-portrait-container {
+        margin: auto;
+        width: fit-content;
+    }
+
+    /* Make the project title text bigger */
+    h1.project-text {
+        font-size: 22px;
+    }
+
+    /* The bar of icons for the tools used to make a project */
+    .project-tools {
+        height: 24px;
+        display: inline-block;
+    }
+
+    /* Remove padding around project cover */
+    .project-details {
+        padding: 0;
+    }
+
+    /* Disable hover for project cover */
+    .project-container, .project-container * {
+        pointer-events: none;
+    }
+
+    /* Hide the extra project data that would make the layout cluttered on mobile */
+    .project-links-container, .project-icon, .project-fade-in-out {
+        display: none;
+    }
+
+    /* Ensure the click box is enabled */
+    .project-click-box {
+        display: block;
+        pointer-events: all;
+    }
+}
