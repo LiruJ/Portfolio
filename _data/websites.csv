@@ -1,4 +1,4 @@
-data-name,name,icon-image
-"github","GitHub","/assets/images/websites/github.png"
-"itchio","itch.io","/assets/images/websites/itchio.png"
-"nuget","NuGet","/assets/images/websites/nuget.png"
+data-name,name,icon-image,transform
+"github","GitHub","/assets/images/websites/github.png","scale(0.85)"
+"itchio","itch.io","/assets/images/websites/itchio.png","scale(0.85)"
+"nuget","NuGet","/assets/images/websites/nuget.png","translateY(-4px)"

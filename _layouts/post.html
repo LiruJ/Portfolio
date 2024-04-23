@@ -43,7 +43,7 @@ layout: default
           {%- for website_link_pair in page.links -%}
           {% assign link = site.data.websites | where: "data-name", website_link_pair[0] | first %}
           <a href="{{ website_link_pair[1] }}" target="_blank">
-            <img class="project-icon" src="{{ link.icon-image }}" />
+            <img class="project-icon" src="{{ link.icon-image }}" style="transform: {{ link.transform }};"/>
           </a>
           {%- endfor -%}
         </div>

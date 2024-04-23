@@ -51,10 +51,15 @@
   }
 }
 
+.site-title:hover {
+  text-decoration: none;
+}
+
 .site-logo {
   max-height: $base-line-height * $base-font-size * 2.25;
   aspect-ratio: 1;
   vertical-align: bottom;
+  transform: translateY(4px);
 }
 
 .site-aboutme-container {
@@ -63,7 +68,7 @@
 
 .site-portrait-container {
   min-width: 20%;
-  margin-right: 15px;
+  margin-right: 2rem;
 }
 
 .site-portrait {
