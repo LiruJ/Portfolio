@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "This Website"
+last-updated:   2024-06-25 18:02:24 +0100
+categories: website
+
+background-image: ""
+cover-image: ""
+icon-image: "/assets/images/lovebirb-logo.png"
+short-description: This portfolio website; Lovebirb
+
+tools: [ "html5", "jekyll" ]
+links: { "github":"https://github.com/LiruJ/Portfolio" }
+---
+
+{% include post-image.html src="/assets/images/projects/lovebirb/post.png" caption="The source code for this post" height=320 %}
+
+This website itself was created by me, using a static site generator called Jekyll. I was unable to find a template that pleased me, as many were either too boring looking, or awkwardly laid out.
+
+{% include post-image.html src="/assets/images/projects/lovebirb/steam.png" caption="One of the ways Steam displays games" height=320 %}
+
+My skills being mixed between game development and general software engineering meant that I needed a unique design, something that could visually advertise my projects while also showing technical details at a glance. I decided on a vertical list with cover images, as I noticed many gaming platforms use this layout.
+
+I am very happy with the current iteration, as I feel it gives the perfect amount of information at a glance, allows the user to gain additional information by hovering over the project's cover without leaving the page, and still allows for separate detailed pages for each project.
+
+{% include post-image.html src="/assets/images/projects/lovebirb/mobile.png" caption="The website's layout on mobile" height=320 %}
+
+The website is also responsively designed using media queries, allowing it to be used on mobile devices. This is important, as it allows me to link to the website anywhere and not have to worry about the target audience's most used devices.

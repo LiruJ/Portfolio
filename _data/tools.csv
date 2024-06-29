@@ -6,4 +6,6 @@ data-name,name,icon-image
 "opengl","OpenGL","/assets/images/tools/opengl.png"
 "lua","Lua","/assets/images/tools/lua.png"
 "sdl","SDL","/assets/images/tools/sdl.png"
-"construct2","Construct 2","/assets/images/tools/construct2.png"
+"construct2","Construct 2","/assets/images/tools/construct2.png",
+"jekyll","Jeykll","/assets/images/tools/jekyll.png",
+"html5","HTML 5","/assets/images/tools/html5.png"
