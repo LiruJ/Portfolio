@@ -70,6 +70,17 @@ $content-translucent-grey: #252525a8 !default;
   margin-bottom: 15px;
 }
 
+/* Used for the caption and video for a markdown video */
+.project-video-container {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* The markdown video itself */
+.project-video {
+  cursor: pointer;
+}
+
 .project-icon-container {
   flex: 1;
   padding-left: 10px;

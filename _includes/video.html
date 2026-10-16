@@ -1,0 +1,10 @@
+<div>
+    <p class="project-video-container">
+        <video class="project-video" height="{{ include.height | default: 220 }}" controls loop muted playsinline>
+        
+            <source src="{{ include.src | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </p>
+    <figcaption class="project-image-caption">{{ include.caption }}</figcaption>
+</div>
